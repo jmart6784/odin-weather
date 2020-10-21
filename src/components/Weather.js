@@ -6,6 +6,10 @@ const Weather = () => {
     city: "...",
     temperature: "...",
     feelsLike: "...",
+    humidity: "...",
+    tempMax: "...",
+    tempMin: "...",
+    wind: "...",
   });
 
   const [ctrlSearch, setCtrlSearch] = useState("");
@@ -29,6 +33,10 @@ const Weather = () => {
         city: data.name,
         temperature: data.main.temp,
         feelsLike: data.main.feels_like,
+        humidity: data.main.humidity,
+        tempMax: data.main.temp_max,
+        tempMin: data.main.temp_min,
+        wind: data.wind.speed,
       });
     } catch (error) {
       console.log("Error", error);
@@ -61,6 +69,11 @@ const Weather = () => {
       <h2>City: {weatherInfo.city}</h2>
       <h2>Current Temperature: {weatherInfo.temperature}°F</h2>
       <h2>Feels like: {weatherInfo.feelsLike}°F</h2>
+      <h2>Humidity: {weatherInfo.humidity}%</h2>
+      <h2>Wind speed: {weatherInfo.wind}mph</h2>
+      <h2>
+        Min: {weatherInfo.tempMin}°F / Max: {weatherInfo.tempMax}°F
+      </h2>
       <br />
       <div>
         <label>Change City:</label>
