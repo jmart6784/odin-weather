@@ -1,1 +1,88 @@
+body {
+  background: linear-gradient(#0b2638, #9198e5);
+}
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label,
+div,
+span {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+#weather-container {
+  height: 100vh;
+  box-sizing: border-box;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.title {
+  font-weight: 200;
+}
+
+#weather-info-container {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.weather-info {
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+
+#current-temp {
+  font-size: 150px;
+}
+
+#city-name {
+  font-size: 40px;
+}
+
+// search form section
+#inputs-container {
+  align-self: start;
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.5fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.input-label {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.search-label {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.search-inputs {
+  border: 0px;
+  background-color: white;
+  padding-left: 5px;
+  border-radius: 10px;
+  font-size: 18px;
+  outline: none;
+}
+
+#search-btn {
+  align-self: end;
+  justify-self: start;
+  outline: none;
+  background-color: rgb(104, 182, 228);
+  color: white;
+  padding: 5px 15px 5px 15px;
+  border: 0;
+  border-radius: 10px;
+  font-size: 20px;
+}
