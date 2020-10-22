@@ -1,3 +1,6 @@
+This project practices asynchronous programming and promises with the open weather map API. Part of the Odin Project:
+https://www.theodinproject.com/courses/javascript/lessons/weather-app
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
